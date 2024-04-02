@@ -64,7 +64,7 @@ public class BioCentroMenuContributor : IMenuContributor
                        BioCentroMenus.Clientes,
                       l["Menu:Cadastro:Clientes"],
                        icon: "fa fa-handshake-o",
-                       url: "/Pages/Clientes"
+                       url: "~/Pages/Cadastro/Clientes"
                    )
                )
                .AddItem(
@@ -72,7 +72,7 @@ public class BioCentroMenuContributor : IMenuContributor
                        BioCentroMenus.Servicos,
                       l["Menu:Cadastro:Servicos"],
                        icon: "fa fa-cogs",
-                       url: "/Pages/Servicos"
+                       url: "/Pages/Cadastro/Servicos"
                    )
                )
                .AddItem(
@@ -80,7 +80,7 @@ public class BioCentroMenuContributor : IMenuContributor
                        BioCentroMenus.Profissionais,
                       l["Menu:Cadastro:Profissionais"],
                        icon: "fa fa-users",
-                       url: "/Pages/Profissionais"
+                       url: "/Pages/Cadastro/Profissionais"
                    )
                )
            );
@@ -96,7 +96,7 @@ public class BioCentroMenuContributor : IMenuContributor
                       BioCentroMenus.Caixa,
                      l["Menu:Financeiro:Caixa"],
                       icon: "fa fa-line-chart",
-                      url: "/Pages/Caixa"
+                      url: "/Pages/Financeiro/Caixa"
                   )
               )
           );

@@ -64,7 +64,6 @@
   <ItemGroup>
     <Folder Include="Pages\Cadastro\Profissionais\" />
     <Folder Include="Pages\Cadastro\Servicos\" />
-    <Folder Include="Pages\Financeiro\" />
   </ItemGroup>
 
 </Project>

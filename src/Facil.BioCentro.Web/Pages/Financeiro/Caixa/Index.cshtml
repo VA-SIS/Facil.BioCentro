@@ -1,9 +1,9 @@
-﻿@page "/Pages/Cadastro/Clientes"
+﻿@page "/Pages/Financeiro/Caixa"
 
 @using Microsoft.AspNetCore.Mvc.Localization
 @using Facil.BioCentro.Localization
 @using Volo.Abp.Users
-@model Facil.BioCentro.Web.Pages.Cadastro.Clientes.IndexModel
+@model Facil.BioCentro.Web.Pages.Financeiro.Caixa.IndexModel
 @inject IHtmlLocalizer<BioCentroResource> L
 @inject ICurrentUser CurrentUser
 
@@ -11,16 +11,16 @@
 }
 
 @section styles {
-    <abp-style src="/Pages/Cadastro/Clientes/Index.css" />
+    <abp-style src="/Pages/Financeiro/Caixa/Index.css" />
 }
 
 @section scripts {
-    <abp-script src="/Pages/Cadastro/Clientes/Index.js" />
+    <abp-script src="/Pages/Financeiro/Caixa/Index.js" />
 }
 
 
 <div class="container">
 
-    <h3>Clientes</h3>
+    <h3>Fluxo Caixa</h3>
 
 </div>
