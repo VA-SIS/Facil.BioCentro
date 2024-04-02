@@ -1,0 +1,16 @@
+{
+  "culture": "pt-BR",
+  "texts": {
+    "Menu:Home": "Principal",
+
+    "Menu:Cadastro": "Cadastro",
+    "Menu:Cadastro:Clientes": "Clientes",
+    "Menu:Cadastro:Servicos": "Serviços",
+    "Menu:Cadastro:Profissionais": "Profissionais",
+    "Menu:Financeiro": "Financeiro",
+    "Menu:Financeiro:Caixa": "Fluxo Caixa",
+
+    "Welcome": "Seja bem-vindo!",
+    "LongWelcomeMessage": "Bem-vindo a esta aplicação. Este é um projeto inicial baseado no ABP framework. Para mais informações, visite abp.io."
+  }
+}
