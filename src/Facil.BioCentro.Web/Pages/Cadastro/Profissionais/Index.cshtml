@@ -1,9 +1,9 @@
-﻿@page "/Pages/Cadastro/Clientes"
-
+﻿@page "/Pages/Cadastro/Profissionais"
 @using Microsoft.AspNetCore.Mvc.Localization
 @using Facil.BioCentro.Localization
 @using Volo.Abp.Users
-@model Facil.BioCentro.Web.Pages.Cadastro.Clientes.IndexModel
+
+@model Facil.BioCentro.Web.Pages.Cadastro.Profissionais.IndexModel
 
 @inject IHtmlLocalizer<BioCentroResource> L
 @inject ICurrentUser CurrentUser
@@ -12,16 +12,16 @@
 }
 
 @section styles {
-    <abp-style src="/Pages/Cadastro/Clientes/Index.css" />
+    <abp-style src="/Pages/Cadastro/Profissionais/Index.css" />
 }
 
 @section scripts {
-    <abp-script src="/Pages/Cadastro/Clientes/Index.js" />
+    <abp-script src="/Pages/Cadastro/Profissionais/Index.js" />
 }
 
 
 <div class="container">
 
-    <h3>Clientes</h3>
+    <h3>Profissionais</h3>
 
 </div>
