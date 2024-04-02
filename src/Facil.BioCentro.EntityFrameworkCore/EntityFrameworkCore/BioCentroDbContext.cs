@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Facil.BioCentro.Entities.Pessoas;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.FeatureManagement.EntityFrameworkCore;
 using Volo.Abp.Identity;
 using Volo.Abp.Identity.EntityFrameworkCore;
@@ -24,6 +26,13 @@ public class BioCentroDbContext :
     ITenantManagementDbContext
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
+
+
+    // Entidades
+    public DbSet<Cliente> Clientes { get; set; }
+    public DbSet<Profissional> Profissionais { get; set; }
+
+
 
     #region Entities from the modules
 
@@ -76,11 +85,29 @@ public class BioCentroDbContext :
 
         /* Configure your own tables/entities inside here */
 
-        //builder.Entity<YourEntity>(b =>
-        //{
-        //    b.ToTable(BioCentroConsts.DbTablePrefix + "YourEntities", BioCentroConsts.DbSchema);
-        //    b.ConfigureByConvention(); //auto configure for the base class props
-        //    //...
-        //});
+        builder.Entity<Cliente>(b =>
+        {
+            b.ToTable(BioCentroConsts.DbTablePrefix + "Clientes", BioCentroConsts.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props           
+            b.Property(x => x.Nome).IsRequired().HasMaxLength(250);
+            b.Property(x => x.Email).IsRequired().HasMaxLength(150);
+
+
+        });
+
+        builder.Entity<Profissional>(b =>
+        {
+            b.ToTable(BioCentroConsts.DbTablePrefix + "Profissionais", BioCentroConsts.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props           
+            b.Property(x => x.Nome).IsRequired().HasMaxLength(250);
+            b.Property(x => x.Email).IsRequired().HasMaxLength(150);
+
+            b.Property(x => x.Profissao).IsRequired().HasMaxLength(150);
+
+
+        });
+
+
+       
     }
 }
