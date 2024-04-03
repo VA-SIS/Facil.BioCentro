@@ -4,6 +4,7 @@ using Facil.BioCentro.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
@@ -12,9 +13,11 @@ using Volo.Abp.EntityFrameworkCore;
 namespace Facil.BioCentro.Migrations
 {
     [DbContext(typeof(BioCentroDbContext))]
-    partial class BioCentroDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240403135227_TipoPessoa")]
+    partial class TipoPessoa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,7 +79,7 @@ namespace Facil.BioCentro.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clientes", (string)null);
+                    b.ToTable("AppClientes", (string)null);
                 });
 
             modelBuilder.Entity("Facil.BioCentro.Entities.Pessoas.Profissional", b =>
@@ -129,7 +132,7 @@ namespace Facil.BioCentro.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Profissionais", (string)null);
+                    b.ToTable("AppProfissionais", (string)null);
                 });
 
             modelBuilder.Entity("Volo.Abp.AuditLogging.AuditLog", b =>

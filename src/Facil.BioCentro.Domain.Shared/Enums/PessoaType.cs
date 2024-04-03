@@ -1,7 +1,11 @@
-﻿namespace Facil.BioCentro.Enums;
+﻿using System.ComponentModel;
+
+namespace Facil.BioCentro.Enums;
 
 public enum PessoaType
 {
-    Fisica,
-    Juridica
+    [Description("Pessoa Física")]
+    Fisica = 0,
+    [Description("Pessoa Jurídica")]
+    Juridica = 1
 }
