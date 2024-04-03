@@ -29,21 +29,39 @@ public class BioCentroDataSeedContributor :
             return;
         }
 
-        //var cliente1 = new Cliente
-        //{
-        //    Nome = "Adenilse Eulina da Cruz",
-        //    Email = string.Empty,
-        //    Cpf_Cnpj = "070.013.448-42",
-        //    TipoPessoa = PessoaType.Fisica
-        //};
+        await _profissionalRepository.InsertAsync(
 
-        //var cliente2 = new Cliente
-        //{
-        //    Nome = "Darlete Garcia de Mattos",
-        //    Email = string.Empty,
-        //    Cpf_Cnpj = "576-759-029-04",
-        //    TipoPessoa = PessoaType.Fisica
-        //};
+              new Profissional
+              {
+                  Nome = "Cristiane Andréia Soares",
+                  Email = string.Empty,
+                  Profissao = string.Empty,
+              },
+              autoSave: true
+          );
+
+        await _profissionalRepository.InsertAsync(
+
+             new Profissional
+             {
+                 Nome = "Géssica Araújo Leite da Silva",
+                 Email = string.Empty,
+                 Profissao = "Psicóloga",
+             },
+             autoSave: true
+         );
+
+        await _profissionalRepository.InsertAsync(
+
+             new Profissional
+             {
+                 Nome = "Mariana dos Santos Dias",
+                 Email = string.Empty,
+                 Profissao = "Fonoaudióloga",
+             },
+             autoSave: true
+         );
+
 
 
         await _clienteRepository.InsertAsync(
@@ -72,9 +90,7 @@ public class BioCentroDataSeedContributor :
 
 
 
-        //await _clienteRepository
-        //       .InsertManyAsync(new[] { cliente1, cliente2 });
-
+      
 
 
     }
