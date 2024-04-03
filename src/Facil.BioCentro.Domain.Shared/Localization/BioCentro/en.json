@@ -11,6 +11,37 @@
     "Menu:Financeiro:Caixa": "Cash Flow",
 
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+
+    "Menu:BioCentro": "BioCentro",
+    "Menu:Clientes": "Customers",
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "PublishDate": "Publish date",
+    "NovoCliente": "New Customer",
+
+    "Nome": "Name",
+    "Email": "Email",
+    "Profissao": "Occupation",
+
+
+    "CreationTime": "Creation time",
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "Enum:PessoaType.0": "Person",
+    "Enum:PessoaType.1": "Company",
+
+    "ClienteDeletionConfirmationMessage": "Are you sure to delete the customer '{0}'?",
+    "SuccessfullyDeleted": "Successfully deleted!",
+    "Permission:BioCentro": "BioCentro",
+    "Permission:Clientes": "Customer Management",
+    "Permission:Clientes.Create": "Creating new Customer",
+    "Permission:Clientes.Edit": "Editing the Customer",
+    "Permission:Clientes.Delete": "Deleting the Customer"
+
+
+
   }
 }

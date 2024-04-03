@@ -1,10 +1,13 @@
 ﻿@page "/Pages/Cadastro/Clientes"
 
+@using Facil.BioCentro.Permissions
+@using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Mvc.Localization
 @using Facil.BioCentro.Localization
 @using Volo.Abp.Users
 @model Facil.BioCentro.Web.Pages.Cadastro.Clientes.IndexModel
 
+@inject IAuthorizationService AuthorizationService
 @inject IHtmlLocalizer<BioCentroResource> L
 @inject ICurrentUser CurrentUser
 
@@ -22,6 +25,33 @@
 
 <div class="container">
 
-    <h3>Clientes</h3>
+    <abp-card>
+        <abp-card-header>
+            <abp-row>
+                <abp-column size-md="_6">
+                    <abp-card-title>@L["Clientes"]</abp-card-title>
+                </abp-column>
+                <abp-column size-md="_6" class="text-end">
+              @*       @if (await AuthorizationService
+                    .IsGrantedAsync(BioCentroPermissions.Clientes.Create))
+                    {
+                        <abp-button id="NovoClienteButton"
+                                    text="@L["NovoCliente"].Value"
+                                    icon="plus"
+                                    button-type="Primary" />
+                    } *@
+
+                    <abp-button id="NovoClienteButton"
+                                text="@L["NovoCliente"].Value"
+                                icon="plus"
+                                button-type="Primary" />
+                </abp-column>
+            </abp-row>
+        </abp-card-header>
+        <abp-card-body>
+            <abp-table striped-rows="true" id="clientesTable"></abp-table>
+        </abp-card-body>
+    </abp-card>
+
 
 </div>
