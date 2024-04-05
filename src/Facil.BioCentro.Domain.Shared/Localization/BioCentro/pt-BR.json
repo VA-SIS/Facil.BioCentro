@@ -25,6 +25,8 @@
     "Nome": "Nome",
     "Email": "Email",
     "Profissao": "Profissão",
+    "Cpf_Cnpj": "CPF/CNPJ",
+    "TipoPessoa": "Tipo Pessoa",
 
 
     "CreationTime": "Data de criação",

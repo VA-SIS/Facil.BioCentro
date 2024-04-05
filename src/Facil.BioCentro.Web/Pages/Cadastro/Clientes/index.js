@@ -27,6 +27,16 @@
                 },
 
                 {
+                    title: l('Cpf_Cnpj'),
+                    data: "cpf_cnpj"
+                },
+
+                {
+                    title: l('TipoPessoa'),
+                    data: "tipopessoa"
+                },
+
+                {
                     title: l('Actions'),
                     rowAction: {
                         items:

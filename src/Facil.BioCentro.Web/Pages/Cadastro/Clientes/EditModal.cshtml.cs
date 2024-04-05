@@ -1,17 +1,13 @@
-using AutoMapper.Internal.Mappers;
 using Facil.BioCentro.Clientes;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Threading.Tasks;
 using System;
-using static Facil.BioCentro.Web.Pages.Cadastro.Clientes.CreateModalModel;
 using System.ComponentModel.DataAnnotations;
-using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Form;
 using Facil.BioCentro.Enums;
 
 namespace Facil.BioCentro.Web.Pages.Cadastro.Clientes;
 
-public class EditModalModel : PageModel
+public class EditModalModel :   BioCentroPageModel
 {
     [BindProperty]
     public EditClienteViewModel Cliente { get; set; }
@@ -32,7 +28,7 @@ public class EditModalModel : PageModel
     {
         var clienteDto = await _clienteAppService.GetAsync(id);
 
-        //Cliente = ObjectMapper.Map<ClienteDto, EditClienteViewModel>(clienteDto);
+        Cliente = ObjectMapper.Map<ClienteDto, EditClienteViewModel>(clienteDto);
     }
 
 
