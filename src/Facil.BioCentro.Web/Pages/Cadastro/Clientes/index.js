@@ -28,12 +28,12 @@
 
                 {
                     title: l('Cpf_Cnpj'),
-                    data: "cpf_cnpj"
+                    data: "cpf_Cnpj"
                 },
 
                 {
                     title: l('TipoPessoa'),
-                    data: "tipopessoa"
+                    data: "tipoPessoa"
                 },
 
                 {
