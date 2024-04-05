@@ -6,5 +6,5 @@ namespace Facil.BioCentro.Web;
 [Dependency(ReplaceServices = true)]
 public class BioCentroBrandingProvider : DefaultBrandingProvider
 {
-    public override string AppName => "BioCentro";
+    public override string AppName => "Fácil ERP";
 }

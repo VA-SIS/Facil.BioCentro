@@ -19,10 +19,7 @@ public class EditModalModel :   BioCentroPageModel
         _clienteAppService = clienteAppService;
     }
 
-    public void OnGet()
-    {
-        Cliente = new EditClienteViewModel();
-    }
+  
 
     public async Task OnGetAsync(Guid id)
     {
@@ -31,6 +28,15 @@ public class EditModalModel :   BioCentroPageModel
         Cliente = ObjectMapper.Map<ClienteDto, EditClienteViewModel>(clienteDto);
     }
 
+    public async Task<IActionResult> OnPostAsync()
+    {
+        await _clienteAppService.UpdateAsync(
+            Cliente.Id,
+            ObjectMapper.Map<EditClienteViewModel, CreateUpdateClienteDto>(Cliente)
+        );
+
+        return NoContent();
+    }
 
     public class EditClienteViewModel
     {
