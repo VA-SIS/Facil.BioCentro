@@ -1,7 +1,7 @@
 ﻿$(function () {
     var l = abp.localization.getResource('BioCentro');
-    var createModal = new abp.ModalManager(abp.appPath + 'Clientes/CreateModal');
-    var editModal = new abp.ModalManager(abp.appPath + 'Clientes/EditModal');
+    var createModal = new abp.ModalManager(abp.appPath + 'Cadastro/Clientes/CreateModal');
+    var editModal = new abp.ModalManager(abp.appPath + 'Cadastro/Clientes/EditModal');
 
     var dataTable = $('#clientesTable').DataTable(
         abp.libs.datatables.normalizeConfiguration({

@@ -16,5 +16,6 @@ public class BioCentroApplicationAutoMapperProfile : Profile
 
         CreateMap<Cliente, ClienteDto>();
         CreateMap<CreateUpdateClienteDto, Cliente>();
+      
     }
 }
