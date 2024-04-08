@@ -18,10 +18,12 @@
         <abp-modal-header title="@L["NovoCliente"].Value"></abp-modal-header>
         <abp-modal-body>
 
+           @*  <abp-input asp-for="Cliente.Id" hidden="true" /> *@
             <abp-input asp-for="Cliente.Nome" />
             <abp-input asp-for="Cliente.Email" />
             <abp-input asp-for="Cliente.Cpf_Cnpj" />
-            <abp-input asp-for="Cliente.TipoPessoa" />
+            <abp-select asp-for="Cliente.TipoPessoa" />
+        
            
         </abp-modal-body>
         <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>

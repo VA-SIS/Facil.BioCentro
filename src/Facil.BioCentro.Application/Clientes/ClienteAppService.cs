@@ -20,10 +20,9 @@ public class ClienteAppService : BioCentroAppService, IClienteAppService
     public async Task<ClienteDto> CreateAsync(CreateUpdateClienteDto input)
     {
 
-        var cliente = new Cliente
+        var cliente = new Cliente(input.Nome, input.Email)
         {
-            Nome = input.Nome,
-            Email = input.Email,
+           
             Cpf_Cnpj = input.Cpf_Cnpj,
             TipoPessoa = input.TipoPessoa
         };
@@ -78,7 +77,7 @@ public class ClienteAppService : BioCentroAppService, IClienteAppService
         //    await _authorManager.ChangeNameAsync(author, input.Name);
         //}
 
-       
+     
         cliente.Nome = input.Nome;
         cliente.Email = input.Email;
         cliente.Cpf_Cnpj = input.Cpf_Cnpj;

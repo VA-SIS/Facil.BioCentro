@@ -1,12 +1,11 @@
 using Facil.BioCentro.Clientes;
 using Microsoft.AspNetCore.Mvc;
-using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Form;
-
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
-using System;
 using Facil.BioCentro.Enums;
+
+
+
 
 namespace Facil.BioCentro.Web.Pages.Cadastro.Clientes;
 
@@ -20,6 +19,8 @@ public class CreateModalModel : BioCentroPageModel
     public CreateModalModel(IClienteAppService clienteAppService)
     {
         _clienteAppService = clienteAppService;
+
+       
     }
 
     public void OnGet()
@@ -32,6 +33,9 @@ public class CreateModalModel : BioCentroPageModel
     public async Task<IActionResult> OnPostAsync()
     {
         var dto = ObjectMapper.Map<CreateClienteViewModel, CreateUpdateClienteDto>(Cliente);
+
+  
+
         await _clienteAppService.CreateAsync(dto);
 
         return NoContent();
@@ -51,6 +55,6 @@ public class CreateModalModel : BioCentroPageModel
         [StringLength(20)]
         public string Cpf_Cnpj { get; set; } = string.Empty;
 
-        public PessoaType TipoPessoa { get; set; } = 0;
+        public PessoaType TipoPessoa { get; set; } = PessoaType.Fisica;
     }
 }

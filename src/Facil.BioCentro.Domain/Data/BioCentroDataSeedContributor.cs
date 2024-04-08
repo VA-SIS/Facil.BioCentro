@@ -29,64 +29,64 @@ public class BioCentroDataSeedContributor :
             return;
         }
 
-        await _profissionalRepository.InsertAsync(
+        //await _profissionalRepository.InsertAsync(
 
-              new Profissional
-              {
-                  Nome = "Cristiane Andréia Soares",
-                  Email = string.Empty,
-                  Profissao = string.Empty,
-              },
-              autoSave: true
-          );
+        //      new Profissional
+        //      {
+        //          Nome = "Cristiane Andréia Soares",
+        //          Email = string.Empty,
+        //          Profissao = string.Empty,
+        //      },
+        //      autoSave: true
+        //  );
 
-        await _profissionalRepository.InsertAsync(
+        //await _profissionalRepository.InsertAsync(
 
-             new Profissional
-             {
-                 Nome = "Géssica Araújo Leite da Silva",
-                 Email = string.Empty,
-                 Profissao = "Psicóloga",
-             },
-             autoSave: true
-         );
+        //     new Profissional
+        //     {
+        //         Nome = "Géssica Araújo Leite da Silva",
+        //         Email = string.Empty,
+        //         Profissao = "Psicóloga",
+        //     },
+        //     autoSave: true
+        // );
 
-        await _profissionalRepository.InsertAsync(
+        //await _profissionalRepository.InsertAsync(
 
-             new Profissional
-             {
-                 Nome = "Mariana dos Santos Dias",
-                 Email = string.Empty,
-                 Profissao = "Fonoaudióloga",
-             },
-             autoSave: true
-         );
+        //     new Profissional
+        //     {
+        //         Nome = "Mariana dos Santos Dias",
+        //         Email = string.Empty,
+        //         Profissao = "Fonoaudióloga",
+        //     },
+        //     autoSave: true
+        // );
 
 
 
-        await _clienteRepository.InsertAsync(
+        //await _clienteRepository.InsertAsync(
 
-               new Cliente
-               {
-                   Nome = "Adenilse Eulina da Cruz",
-                   Email = string.Empty,
-                   Cpf_Cnpj = "070.013.448-42",
-                   TipoPessoa = PessoaType.Fisica
-               },
-               autoSave: true
-           );
+        //       new Cliente
+        //       {
+        //           Nome = "Adenilse Eulina da Cruz",
+        //           Email = string.Empty,
+        //           Cpf_Cnpj = "070.013.448-42",
+        //           TipoPessoa = PessoaType.Fisica
+        //       },
+        //       autoSave: true
+        //   );
 
-        await _clienteRepository.InsertAsync(
+        //await _clienteRepository.InsertAsync(
 
-              new Cliente
-              {
-                  Nome = "Darlete Garcia de Mattos",
-                  Email = string.Empty,
-                  Cpf_Cnpj = "576-759-029-04",
-                  TipoPessoa = PessoaType.Fisica
-              },
-              autoSave: true
-          );
+        //      new Cliente
+        //      {
+        //          Nome = "Darlete Garcia de Mattos",
+        //          Email = string.Empty,
+        //          Cpf_Cnpj = "576-759-029-04",
+        //          TipoPessoa = PessoaType.Fisica
+        //      },
+        //      autoSave: true
+        //  );
 
 
 

@@ -12,9 +12,9 @@ public class BioCentroApplicationAutoMapperProfile : Profile
          * Alternatively, you can split your mapping configurations
          * into multiple profile classes for a better organization. */
 
-        // Clientes
+        // Clientes      
 
-        CreateMap<Cliente, ClienteDto>();
+        CreateMap<Cliente, ClienteDto>();  
         CreateMap<CreateUpdateClienteDto, Cliente>();
       
     }
