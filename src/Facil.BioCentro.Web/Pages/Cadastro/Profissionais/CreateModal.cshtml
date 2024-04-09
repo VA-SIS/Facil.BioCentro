@@ -1,0 +1,32 @@
+﻿@page
+@using Facil.BioCentro.Localization
+@using Facil.BioCentro.Web.Pages.Cadastro.Profissionais
+@using Microsoft.Extensions.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+
+
+@model CreateModalModel
+
+@inject IStringLocalizer<BioCentroResource> L
+
+@{
+    Layout = null;
+}
+
+<form asp-page="/Cadastro/Profissionais/CreateModal">
+    <abp-modal>
+        <abp-modal-header title="@L["NovoProfissional"].Value"></abp-modal-header>
+        <abp-modal-body>
+
+           @*  <abp-input asp-for="Cliente.Id" hidden="true" /> *@
+            <abp-input asp-for="Profissional.Nome" />
+            <abp-input asp-for="Profissional.Email" />
+            <abp-input asp-for="Profissional.Profissao" />
+           
+            <abp-select asp-for="Profissional.TipoPessoa" />
+        
+           
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</form>
