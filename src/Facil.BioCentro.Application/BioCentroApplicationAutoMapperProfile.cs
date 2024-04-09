@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Facil.BioCentro.Clientes;
 using Facil.BioCentro.Entities.Pessoas;
+using Facil.BioCentro.Profissionais;
 
 namespace Facil.BioCentro;
 
@@ -16,6 +17,12 @@ public class BioCentroApplicationAutoMapperProfile : Profile
 
         CreateMap<Cliente, ClienteDto>();  
         CreateMap<CreateUpdateClienteDto, Cliente>();
-      
+
+
+        // Profissionais      
+
+        CreateMap<Profissional, ProfissionalDto>();
+        CreateMap<CreateUpdateProfissionalDto, Profissional>();
+
     }
 }

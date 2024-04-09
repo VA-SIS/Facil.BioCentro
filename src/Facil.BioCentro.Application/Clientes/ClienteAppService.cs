@@ -9,8 +9,7 @@ namespace Facil.BioCentro.Clientes;
 
 public class ClienteAppService : BioCentroAppService, IClienteAppService
 {
-    //private readonly IClienteRepository _clienteRepository;
-    private readonly IRepository<Cliente, Guid> _clienteRepository;
+      private readonly IRepository<Cliente, Guid> _clienteRepository;
 
     public ClienteAppService(IRepository<Cliente, Guid> clienteRepository)
     {
