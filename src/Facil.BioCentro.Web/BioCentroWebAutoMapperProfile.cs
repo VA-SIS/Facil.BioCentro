@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Facil.BioCentro.Clientes;
+using static Facil.BioCentro.Web.Pages.Cadastro.Clientes.CreateModalModel;
 using static Facil.BioCentro.Web.Pages.Cadastro.Clientes.EditModalModel;
 
 namespace Facil.BioCentro.Web;
@@ -14,6 +15,7 @@ public class BioCentroWebAutoMapperProfile : Profile
         CreateMap<ClienteDto, EditClienteViewModel>();
         CreateMap<CreateUpdateClienteDto,EditClienteViewModel>();
         CreateMap<EditClienteViewModel, CreateUpdateClienteDto>();
+        CreateMap<CreateClienteViewModel, CreateUpdateClienteDto>();
     }
 }
 
