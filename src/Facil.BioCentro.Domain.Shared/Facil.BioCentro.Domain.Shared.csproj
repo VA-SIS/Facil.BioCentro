@@ -26,6 +26,56 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Localization\BioCentro\ar.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\cs.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\de.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\en-GB.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\es.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\fi.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\fr.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\hi.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\hr.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\hu.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\is.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\it.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\nl.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\pl-PL.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\ro-RO.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\ru.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\sk.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\sl.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\tr.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\vi.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\zh-Hans.json" />
+    <EmbeddedResource Remove="Localization\BioCentro\zh-Hant.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Localization\BioCentro\ar.json" />
+    <None Remove="Localization\BioCentro\cs.json" />
+    <None Remove="Localization\BioCentro\de.json" />
+    <None Remove="Localization\BioCentro\en-GB.json" />
+    <None Remove="Localization\BioCentro\es.json" />
+    <None Remove="Localization\BioCentro\fi.json" />
+    <None Remove="Localization\BioCentro\fr.json" />
+    <None Remove="Localization\BioCentro\hi.json" />
+    <None Remove="Localization\BioCentro\hr.json" />
+    <None Remove="Localization\BioCentro\hu.json" />
+    <None Remove="Localization\BioCentro\is.json" />
+    <None Remove="Localization\BioCentro\it.json" />
+    <None Remove="Localization\BioCentro\nl.json" />
+    <None Remove="Localization\BioCentro\pl-PL.json" />
+    <None Remove="Localization\BioCentro\ro-RO.json" />
+    <None Remove="Localization\BioCentro\ru.json" />
+    <None Remove="Localization\BioCentro\sk.json" />
+    <None Remove="Localization\BioCentro\sl.json" />
+    <None Remove="Localization\BioCentro\tr.json" />
+    <None Remove="Localization\BioCentro\vi.json" />
+    <None Remove="Localization\BioCentro\zh-Hans.json" />
+    <None Remove="Localization\BioCentro\zh-Hant.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="8.0.0" />
   </ItemGroup>
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Facil.BioCentro.Clientes;
+﻿namespace Facil.BioCentro.Clientes;
 
 public static class ClienteConsts
 {

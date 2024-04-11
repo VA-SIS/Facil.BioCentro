@@ -1,15 +1,17 @@
 ﻿@page "/Pages/Cadastro/Profissionais"
+
+@using Facil.BioCentro.Permissions
+@using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Mvc.Localization
 @using Facil.BioCentro.Localization
 @using Volo.Abp.Users
 
 @model Facil.BioCentro.Web.Pages.Cadastro.Profissionais.IndexModel
 
+@inject IAuthorizationService AuthorizationService
 @inject IHtmlLocalizer<BioCentroResource> L
 @inject ICurrentUser CurrentUser
 
-@{
-}
 
 @section styles {
     <abp-style src="/Pages/Cadastro/Profissionais/Index.css" />

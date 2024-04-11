@@ -4,11 +4,7 @@
     var editModal = new abp.ModalManager(abp.appPath + 'Cadastro/Profissionais/EditModal');
 
     var dataTable = $('#profissionaisTable').DataTable(
-        abp.libs.datatables.normalizeConfiguration({
-            
-
-
-
+        abp.libs.datatables.normalizeConfiguration({            
             serverSide: true,
             paging: true,
             order: [[1, "asc"]],
@@ -27,8 +23,8 @@
                 },
 
                 {
-                    title: l('Cpf_Cnpj'),
-                    data: "cpf_Cnpj"
+                    title: l('Profissao'),
+                    data: "profissao"
                 },
 
                 {
@@ -55,7 +51,7 @@
                                         /*abp.auth.isGranted('BioCentro.Clientes.Delete')*/,
                                     confirmMessage: function (data) {
                                         return l(
-                                            'ClienteDeletionConfirmationMessage',
+                                            'ProfissionalDeletionConfirmationMessage',
                                             data.record.name
                                         );
                                     },

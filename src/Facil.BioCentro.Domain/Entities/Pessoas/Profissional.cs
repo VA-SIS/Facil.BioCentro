@@ -22,6 +22,6 @@ public class Profissional : Pessoa
 
     }
 
-    public required string Profissao { get; set; } = string.Empty;
+    //public required string Profissao { get; set; } = string.Empty;
 
 }
