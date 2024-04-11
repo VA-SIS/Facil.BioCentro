@@ -77,7 +77,7 @@ public class ProfissionalAppService : BioCentroAppService, IProfissionalAppServi
         //    await _authorManager.ChangeNameAsync(author, input.Name);
         //}
 
-
+        profissional.Id = id
         profissional.Nome = input.Nome;
         profissional.Email = input.Email;
         profissional.Profissao = input.Profissao;
