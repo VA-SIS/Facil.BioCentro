@@ -8,7 +8,7 @@ using Volo.Abp.ObjectMapping;
 
 namespace Facil.BioCentro.Profissionais;
 
-public class ProfissionalAppService : BioCentroAppService, IProfisionalAppService
+public class ProfissionalAppService : BioCentroAppService, IProfissionalAppService
 {
     private readonly IRepository<Profissional, Guid> _profissionalRepository;
 

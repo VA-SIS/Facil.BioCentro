@@ -1,7 +1,7 @@
 ﻿$(function () {
     var l = abp.localization.getResource('BioCentro');
-    var createModal = new abp.ModalManager(abp.appPath + 'Cadastro/Profissionais/CreateModal');
-    var editModal = new abp.ModalManager(abp.appPath + 'Cadastro/Profissionais/EditModal');
+    var createModal = new abp.ModalManager(abp.appPath + 'Cadastro/Profissionais/CreateModalProfissional');
+    var editModal = new abp.ModalManager(abp.appPath + 'Cadastro/Profissionais/EditModalProfissional');
 
     var dataTable = $('#profissionaisTable').DataTable(
         abp.libs.datatables.normalizeConfiguration({            

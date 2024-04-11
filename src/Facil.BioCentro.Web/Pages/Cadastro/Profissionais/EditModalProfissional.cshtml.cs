@@ -14,9 +14,9 @@ public class EditModalModel :   BioCentroPageModel
     [BindProperty]
     public EditProfissionalViewModel Profissional { get; set; }
 
-    private readonly IProfisionalAppService _profissionalAppService;
+    private readonly IProfissionalAppService _profissionalAppService;
 
-    public EditModalModel(IProfisionalAppService profissionalAppService)
+    public EditModalModel(IProfissionalAppService profissionalAppService)
     {
         _profissionalAppService = profissionalAppService;
     }

@@ -11,9 +11,9 @@ public class CreateModalModel : BioCentroPageModel
     [BindProperty]
     public CreateProfissionalViewModel Profissional { get; set; }
 
-    private readonly IProfisionalAppService _profissionalAppService;
+    private readonly IProfissionalAppService _profissionalAppService;
 
-    public CreateModalModel(IProfisionalAppService profissionalAppService)
+    public CreateModalModel(IProfissionalAppService profissionalAppService)
     {
         _profissionalAppService = profissionalAppService;
 

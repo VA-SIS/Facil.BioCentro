@@ -5,7 +5,7 @@ using Volo.Abp.Application.Services;
 
 namespace Facil.BioCentro.Profissionais;
 
-public interface IProfisionalAppService : IApplicationService
+public interface IProfissionalAppService : IApplicationService
 {
     Task<ProfissionalDto> GetAsync(Guid id);
 

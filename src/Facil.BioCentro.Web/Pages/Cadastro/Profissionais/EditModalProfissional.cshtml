@@ -12,13 +12,15 @@
 @{
     Layout = null;
 }
-<form asp-page="/Cadastro/Profissionais/EditModal">
+
+<form asp-page="/Cadastro/Profissionais/EditModalProfissional">
     <abp-modal>
         <abp-modal-header title="@L["Update"].Value"></abp-modal-header>
         <abp-modal-body>
 
             <abp-input asp-for="Profissional.Id" hidden="true" />
             <abp-input asp-for="Profissional.Nome" />
+            <abp-input asp-for="Profissional.Cpf_Cnpj" />
             <abp-input asp-for="Profissional.Email" />
             <abp-input asp-for="Profissional.Profissao" />
 
