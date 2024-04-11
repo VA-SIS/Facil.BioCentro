@@ -38,6 +38,7 @@
     "Enum:PessoaType.1": "Company",
 
     "ClienteDeletionConfirmationMessage": "Are you sure to delete the customer '{0}'?",
+    "ProfissionalDeletionConfirmationMessage": "Are you sure to delete the professional '{0}'?",
     "SuccessfullyDeleted": "Successfully deleted!",
     "Permission:BioCentro": "BioCentro",
     "Permission:Clientes": "Customer Management",

@@ -39,6 +39,7 @@
     "Enum:PessoaType.1": "Pessoa Jurídica",
 
     "ClienteDeletionConfirmationMessage": "Você tem certeza de que deseja excluir o cliente '{0}'?",
+    "ProfissionalDeletionConfirmationMessage": "Você tem certeza de que deseja excluir o profissional '{0}'?",
     "SuccessfullyDeleted": "Excluído com sucesso!",
     "Permission:BioCentro": "BioCentro",
     "Permission:Clientes": "Gerenciamento de clientes",

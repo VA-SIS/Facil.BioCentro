@@ -7,12 +7,15 @@ public class Profissional : Pessoa
 {
     public Profissional(string nome, string email, string profissao) : base(nome, email)
     {
+        Id = Guid.Empty;
         Nome = nome;
         Email = email;
         Profissao = profissao;
     }
 
-    internal Profissional(Guid id, [NotNull] string nome, [NotNull] string email, string profissao) : base(id, nome, email)
+    
+
+    public Profissional(Guid id, [NotNull] string nome, [NotNull] string email, string profissao) : base(id, nome, email)
     {
         Id = id;
         Nome = nome;

@@ -12,7 +12,7 @@
             scrollX: true,
             ajax: abp.libs.datatables.createAjax(facil.bioCentro.profissionais.profissional.getList),
             columnDefs: [
-                
+               
                 {
                     title: l('Nome'),
                     data: "nome"
