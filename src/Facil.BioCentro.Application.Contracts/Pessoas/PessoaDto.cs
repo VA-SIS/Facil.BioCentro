@@ -1,8 +1,9 @@
 ﻿using System;
+using Volo.Abp.Application.Dtos;
 
 namespace Facil.BioCentro.Pessoas;
 
-public class PessoaDto
+public class PessoaDto : AuditedEntityDto<Guid>
 {
     public int Codigo { get; set; }
     public string Nome { get; set; } = string.Empty;
