@@ -54,7 +54,7 @@
                                        
                                         return l(
                                             'ProfissionalDeletionConfirmationMessage',
-                                            data.record.name
+                                            data.record.nome
                                         );
                                     },
                                     action: function (data) {

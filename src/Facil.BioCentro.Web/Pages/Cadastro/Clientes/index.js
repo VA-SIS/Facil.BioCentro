@@ -56,7 +56,7 @@
                                     confirmMessage: function (data) {
                                         return l(
                                             'ClienteDeletionConfirmationMessage',
-                                            data.record.name
+                                            data.record.nome
                                         );
                                     },
                                     action: function (data) {
