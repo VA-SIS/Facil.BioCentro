@@ -41,8 +41,7 @@
                                     text: l('Edit'),
                                     visible: true
                                         /*abp.auth.isGranted('BioCentro.Clientes.Edit')*/,
-                                    action: function (data) {
-                                        console.log("Edit -> "+data.record.id);
+                                    action: function (data) {                                     
                                         editModal.open({ id: data.record.id });
                                     }
                                 },
@@ -54,11 +53,10 @@
                                        
                                         return l(
                                             'ProfissionalDeletionConfirmationMessage',
-                                            data.record.nome
+                                            data.record.nome + ' ' + data.record.id
                                         );
                                     },
-                                    action: function (data) {
-                                       
+                                    action: function (data) {                                       
                                         facil.bioCentro.profissionais.profisional
                                             .delete(data.record.id)
                                             .then(function () {
@@ -68,6 +66,8 @@
                                                 );
                                                 dataTable.ajax.reload();
                                             });
+
+                                        
                                     }
                                 }
                             ]
