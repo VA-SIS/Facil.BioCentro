@@ -1,0 +1,29 @@
+﻿@page
+@using Facil.BioCentro.Localization
+@using Facil.BioCentro.Web.Pages.Cadastro.Servicos
+@using Microsoft.Extensions.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+
+
+@model CreateModalModel
+
+@inject IStringLocalizer<BioCentroResource> L
+
+@{
+    Layout = null;
+}
+
+<form asp-page="/Cadastro/Servicos/CreateModalServico">
+    <abp-modal>
+        <abp-modal-header title="@L["NovoServico"].Value"></abp-modal-header>
+        <abp-modal-body>
+
+           @*  <abp-input asp-for="Cliente.Id" hidden="true" /> *@
+            <abp-input asp-for="Servico.Descricao" />
+          
+        
+           
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</form>

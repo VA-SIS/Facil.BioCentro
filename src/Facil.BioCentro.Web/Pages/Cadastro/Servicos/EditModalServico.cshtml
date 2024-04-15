@@ -1,0 +1,30 @@
+﻿@page
+
+@using Facil.BioCentro.Localization
+@using Facil.BioCentro.Web.Pages.Cadastro.Clientes
+@using Microsoft.Extensions.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+
+@model EditModalModel
+
+@inject IStringLocalizer<BioCentroResource> L
+
+@{
+    Layout = null;
+}
+<form asp-page="/Cadastro/Clientes/EditModalCliente">
+    <abp-modal>
+        <abp-modal-header title="@L["Update"].Value"></abp-modal-header>
+        <abp-modal-body>
+
+            <abp-input asp-for="Cliente.Id" hidden="true" />
+            <abp-input asp-for="Cliente.Nome" />
+            <abp-input asp-for="Cliente.Email" />
+            <abp-input asp-for="Cliente.Cpf_Cnpj" />
+            <abp-select asp-for="Cliente.TipoPessoa" />
+        
+
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</form>
