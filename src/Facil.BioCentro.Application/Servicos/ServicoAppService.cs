@@ -47,7 +47,7 @@ public class ServicoAppService : BioCentroAppService, IServicoAppService
     {
         if (input.Sorting.IsNullOrWhiteSpace())
         {
-            input.Sorting = nameof(Profissional.Nome);
+            input.Sorting = nameof(Servico.Descricao);
         }
 
         var servicos = await _servicoRepository.GetPagedListAsync(input.SkipCount,

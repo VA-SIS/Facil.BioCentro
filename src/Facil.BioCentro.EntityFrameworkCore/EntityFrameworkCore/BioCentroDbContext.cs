@@ -1,4 +1,5 @@
 ﻿using Facil.BioCentro.Entities.Pessoas;
+using Facil.BioCentro.Entities.Servicos;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -31,6 +32,7 @@ public class BioCentroDbContext :
     // Entidades
     public DbSet<Cliente> Clientes { get; set; }
     public DbSet<Profissional> Profissionais { get; set; }
+    public DbSet<Servico> Servicos { get; set; }
 
 
 
