@@ -29,6 +29,7 @@
 
     "Nome": "Nome",
     "Email": "Email",
+    "Descricao": "Descrição",
     "Profissao": "Profissão",
     "Cpf_Cnpj": "CPF/CNPJ",
     "TipoPessoa": "Tipo Pessoa",
