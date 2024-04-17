@@ -6,6 +6,8 @@ using static Facil.BioCentro.Web.Pages.Cadastro.Clientes.CreateModalModel;
 using static Facil.BioCentro.Web.Pages.Cadastro.Clientes.EditModalModel;
 using static Facil.BioCentro.Web.Pages.Cadastro.Profissionais.CreateModalModel;
 using static Facil.BioCentro.Web.Pages.Cadastro.Profissionais.EditModalModel;
+using static Facil.BioCentro.Web.Pages.Cadastro.Servicos.CreateModalModel;
+using static Facil.BioCentro.Web.Pages.Cadastro.Servicos.EditModalModel;
 
 namespace Facil.BioCentro.Web;
 
@@ -33,10 +35,10 @@ public class BioCentroWebAutoMapperProfile : Profile
         // Servico      
 
         CreateMap<ServicoDto, CreateUpdateServicoDto>();
-        //CreateMap<ServicoDto, EditServicoViewModel>();
-        //CreateMap<CreateUpdateServicoDto, EditServicoViewModel>();
-        //CreateMap<EditServicoViewModel, CreateUpdateServicoDto>();
-        //CreateMap<CreateServicoViewModel, CreateUpdateServicoDto>();
+        CreateMap<ServicoDto, EditServicoViewModel>();
+        CreateMap<CreateUpdateServicoDto, EditServicoViewModel>();
+        CreateMap<EditServicoViewModel, CreateUpdateServicoDto>();
+        CreateMap<CreateServicoViewModel, CreateUpdateServicoDto>();
 
 
 

@@ -41,6 +41,7 @@
 
     "ClienteDeletionConfirmationMessage": "Are you sure to delete the customer '{0}'?",
     "ProfissionalDeletionConfirmationMessage": "Are you sure to delete the professional '{0}'?",
+    "ServicoDeletionConfirmationMessage": "Are you sure to delete the service  '{0}'?",
     "SuccessfullyDeleted": "Successfully deleted!",
     "Permission:BioCentro": "BioCentro",
     "Permission:Clientes": "Customer Management",

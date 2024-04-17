@@ -42,7 +42,7 @@
                                     confirmMessage: function (data) {
                                         return l(
                                             'ServicoDeletionConfirmationMessage',
-                                            data.record.nome
+                                            data.record.descricao
                                         );
                                     },
                                     action: function (data) {

@@ -42,6 +42,9 @@
 
     "ClienteDeletionConfirmationMessage": "Você tem certeza de que deseja excluir o cliente '{0}'?",
     "ProfissionalDeletionConfirmationMessage": "Você tem certeza de que deseja excluir o profissional '{0}'?",
+
+    "ServicoDeletionConfirmationMessage": "Você tem certeza de que deseja excluir o serviço '{0}'?",
+
     "SuccessfullyDeleted": "Excluído com sucesso!",
     "Permission:BioCentro": "BioCentro",
     "Permission:Clientes": "Gerenciamento de clientes",
