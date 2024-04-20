@@ -51,7 +51,17 @@
     "Permission:Clientes": "Gerenciamento de clientes",
     "Permission:Clientes.Create": "Criação de um novo cliente",
     "Permission:Clientes.Edit": "Edição de cliente",
-    "Permission:Clientes.Delete": "Exclusão de cliente"
+    "Permission:Clientes.Delete": "Exclusão de cliente",
+
+    "Permission:Profissionais": "Gerenciamento de Profissional",
+    "Permission:Profissionais.Create": "Criação de um novo Profissional",
+    "Permission:Profissionais.Edit": "Edição de Profissional",
+    "Permission:Profissionais.Delete": "Exclusão de Profissional",
+
+    "Permission:Servicos": "Gerenciamento de Serviços",
+    "Permission:Servicos.Create": "Criação de um novo Serviço",
+    "Permission:Servicos.Edit": "Edição de Serviço",
+    "Permission:Servicos.Delete": "Exclusão de Serviço"
 
 
   }

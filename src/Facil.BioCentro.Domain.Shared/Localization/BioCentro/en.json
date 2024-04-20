@@ -48,7 +48,17 @@
     "Permission:Clientes": "Customer Management",
     "Permission:Clientes.Create": "Creating new Customer",
     "Permission:Clientes.Edit": "Editing the Customer",
-    "Permission:Clientes.Delete": "Deleting the Customer"
+    "Permission:Clientes.Delete": "Deleting the Customer",
+
+    "Permission:Profissionais": "Professional Management",
+    "Permission:Profissionais.Create": "Creating new Professional",
+    "Permission:Profissionais.Edit": "Editing the Professional",
+    "Permission:Profissionais.Delete": "Deleting the Professional",
+
+    "Permission:Services": "Service Management",
+    "Permission:Services.Create": "Creating new Service",
+    "Permission:Services.Edit": "Editing the Service",
+    "Permission:Services.Delete": "Deleting the Service"
 
 
 
