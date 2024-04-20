@@ -15,9 +15,17 @@ public static class BioCentroPermissions
         public const string Delete = Default + ".Delete";
     }
 
-    public static class Funcionarios
+    public static class Profissionais
     {
-        public const string Default = GroupName + ".Funcionarios";
+        public const string Default = GroupName + ".Profissionais";
+        public const string Create = Default + ".Create";
+        public const string Edit = Default + ".Edit";
+        public const string Delete = Default + ".Delete";
+    }
+
+    public static class Servicos
+    {
+        public const string Default = GroupName + ".Servicos";
         public const string Create = Default + ".Create";
         public const string Edit = Default + ".Edit";
         public const string Delete = Default + ".Delete";

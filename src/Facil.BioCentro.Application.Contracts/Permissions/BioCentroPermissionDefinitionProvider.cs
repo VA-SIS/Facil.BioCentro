@@ -20,6 +20,19 @@ public class BioCentroPermissionDefinitionProvider : PermissionDefinitionProvide
         clientesPermission.AddChild(BioCentroPermissions.Clientes.Edit, L("Permission:Clientes.Edit"));
         clientesPermission.AddChild(BioCentroPermissions.Clientes.Delete, L("Permission:Clientes.Delete"));
 
+        var profissionalPermission = myGroup.AddPermission(BioCentroPermissions.Profissionais.Default, L("Permission:Profissionais"));
+
+        profissionalPermission.AddChild(BioCentroPermissions.Profissionais.Create, L("Permission:Profissionais.Create"));
+        profissionalPermission.AddChild(BioCentroPermissions.Profissionais.Edit, L("Permission:Profissionais.Edit"));
+        profissionalPermission.AddChild(BioCentroPermissions.Profissionais.Delete, L("Permission:Profissionais.Delete"));
+
+
+        var servicoPermission = myGroup.AddPermission(BioCentroPermissions.Servicos.Default, L("Permission:Servicos"));
+
+        servicoPermission.AddChild(BioCentroPermissions.Servicos.Create, L("Permission:Servicos.Create"));
+        servicoPermission.AddChild(BioCentroPermissions.Servicos.Edit, L("Permission:Servicos.Edit"));
+        servicoPermission.AddChild(BioCentroPermissions.Servicos.Delete, L("Permission:Servicos.Delete"));
+
 
     }
 
