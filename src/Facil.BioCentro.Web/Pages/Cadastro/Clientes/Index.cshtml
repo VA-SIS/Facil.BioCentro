@@ -32,19 +32,19 @@
                     <abp-card-title>@L["Clientes"]</abp-card-title>
                 </abp-column>
                 <abp-column size-md="_6" class="text-end">
-              @*       @if (await AuthorizationService
+                    @if (await AuthorizationService
                     .IsGrantedAsync(BioCentroPermissions.Clientes.Create))
                     {
                         <abp-button id="NovoClienteButton"
                                     text="@L["NovoCliente"].Value"
                                     icon="plus"
                                     button-type="Primary" />
-                    } *@
+                    }
 
-                    <abp-button id="NovoClienteButton"
+                  @*   <abp-button id="NovoClienteButton"
                                 text="@L["NovoCliente"].Value"
                                 icon="plus"
-                                button-type="Primary" />
+                                button-type="Primary" /> *@
                 </abp-column>
             </abp-row>
         </abp-card-header>
